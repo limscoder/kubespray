@@ -135,6 +135,7 @@ kube_webhook_token_auth: false
 
 ## Variables for webhook token auth https://kubernetes.io/docs/reference/access-authn-authz/authentication/#webhook-token-authentication
 # kube_webhook_token_auth_url: https://...
+# kube_webhook_token_auth_ca: /path/to/ca.crt
 
 # List of the preferred NodeAddressTypes to use for kubelet connections.
 kubelet_preferred_address_types: 'InternalDNS,InternalIP,Hostname,ExternalDNS,ExternalIP'

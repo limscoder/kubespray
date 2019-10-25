@@ -2,6 +2,9 @@
 clusters:
 - name: webhook-token-auth-cluster
   cluster:
+    {% if kube_webhook_token_auth_ca is defined -%}
+    certificate-authority: {{ kube_webhook_token_auth_ca }}
+    {% endif -%}
     server: {{ kube_webhook_token_auth_url }}
 
 # users refers to the API server's webhook configuration.
